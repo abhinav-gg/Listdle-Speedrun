@@ -18,17 +18,27 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 .container {
-    flex: 1;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    width: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -279,8 +289,8 @@ body {
     font-size: 1rem;
     border: 1px solid var(--accent-color);
     border-radius: 8px;
-    width: 200px; /* Adjust width as needed */
-    margin-right: 1rem; /* Space between input and button */
+    width: 200px;
+    margin-right: 1rem;
     transition: border-color 0.3s ease;
 }
 
@@ -327,7 +337,7 @@ header {
 
 .seed-output {
     font-size: 1.2rem;
-    white-space: pre-wrap; /* Preserve formatting for JSON */
+    white-space: pre-wrap;
     margin: 1rem 0;
 }
 
@@ -499,9 +509,9 @@ header {
 
 /* Footer Styles */
 footer {
-    margin-top: auto;
-    padding: 1rem;
-    background-color: var(--background-color);
+    flex-shrink: 0;
     width: 100%;
+    padding: 1rem;
     text-align: center;
+    background-color: var(--background-color);
 } 
