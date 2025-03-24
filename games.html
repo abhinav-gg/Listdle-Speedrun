@@ -20,6 +20,9 @@
                 <button id="apply-seed" class="nav-button games-button">
                     <span class="button-text">Apply Seed</span>
                 </button>
+                <button id="surprise-me" class="nav-button games-button">
+                    <span class="button-text">Surprise Me</span>
+                </button>
             </div>
         </header>
         
@@ -99,7 +102,33 @@
                     displayGames(newSeed);
                 }
             });
+
+            // Function to get a random game and redirect
+            function surpriseMe() {
+                fetchGames()
+                    .then(games => {
+                        if (games && games.length > 0) {
+                            const randomIndex = Math.floor(Math.random() * games.length);
+                            // console.log('Random index:', randomIndex);
+                            const randomGame = games[randomIndex];
+                            // console.log('Random game:', randomGame);
+                            if (randomGame && randomGame.link) {
+                                window.location.href = randomGame.link;
+                            } else {
+                                console.error('Selected game does not have a URL');
+                            }
+                        } else {
+                            console.error('No games available');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching games for Surprise Me:', error);
+                    });
+            }
+
+            // Add event listener for the Surprise Me button
+            document.getElementById('surprise-me').addEventListener('click', surpriseMe);
         });
     </script>
 </body>
-</html> 
+</html>

@@ -6,18 +6,223 @@
         <description>Guess the five-letter word in six tries with color-coded hints.</description>
     </game>
     <game>
-        <title>Nerdle</title>
-        <link>https://nerdlegame.com/</link>
-        <description>Like Wordle, but with math equations instead of words.</description>
+        <title>Hexle</title>
+        <link>https://frankljin.github.io/hexle/</link>
+        <description>Guess the color of the #Hexle in 6 tries! New colour daily.</description>
     </game>
     <game>
-        <title>Globle</title>
-        <link>https://globle-game.com/</link>
-        <description>Guess the country with proximity-based hints.</description>
+        <title>Murdle</title>
+        <link>https://murdle.com/</link>
+        <description>A daily murder puzzle game.</description>
+    </game>
+    <game>
+        <title>Histordle</title>
+        <link>https://histordle.com/yeardle/</link>
+        <description>Daily "Guess the year" History Game.</description>
+    </game>
+    <game>
+        <title>Quizl</title>
+        <link>https://quizl.io/</link>
+        <description>The daily quiz game.</description>
+    </game>
+    <game>
+        <title>Learnle</title>
+        <link>https://learnle.net/</link>
+        <description>A daily learning game.</description>
+    </game>
+    <game>
+        <title>Factle</title>
+        <link>https://frontofficesports.com/trivia/factle/</link>
+        <description>Play the unofficial trivia based version of Wordle.</description>
+    </game>
+    <game>
+        <title>Stumple</title>
+        <link>https://stumple.me/</link>
+        <description>A daily cricket wordle game.</description>
+    </game>
+    <game>
+        <title>FootballWordle</title>
+        <link>https://footballwordle.com/</link>
+        <description>A daily footballer wordle guessing game.</description>
+    </game>
+    <game>
+        <title>Wardle</title>
+        <link>https://www.mlbpickle.com/</link>
+        <description>MLB player guessing game.</description>
+    </game>
+    <game>
+        <title>Poeltl</title>
+        <link>https://poeltl.nbpa.com/</link>
+        <description>NBA player guessing game.</description>
+    </game>
+    <game>
+        <title>Lordle (of the Rings)</title>
+        <link>https://lordle.digitaltolkien.com/</link>
+        <description>A daily Lord of the Rings guessing game.</description>
+    </game>
+    <game>
+        <title>Swordle</title>
+        <link>https://wordle.starwars.guide/</link>
+        <description>A daily Star Wars themed wordle game.</description>
+    </game>
+    <game>
+        <title>Star Wordle</title>
+        <link>https://www.starwordle.com/</link>
+        <description>Wordle but for Star Wars.</description>
+    </game>
+    <game>
+        <title>Squirtle</title>
+        <link>https://squirdle.fireblend.com/</link>
+        <description>A daily Pokémon guessing game.</description>
+    </game>
+    <game>
+        <title>Primel</title>
+        <link>https://converged.yt/primel/</link>
+        <description>Guess the prime number in 6 tries.</description>
     </game>
     <game>
         <title>Game Name</title>
         <link>https://game-url.com</link>
         <description>Brief description of the game.</description>
+    </game>
+    <game>
+        <title>Mathler</title>
+        <link>https://www.mathler.com/</link>
+        <description>A daily math wordle game.</description>
+    </game>
+    <game>
+        <title>Mathle</title>
+        <link>https://mathlegame.com/</link>
+        <description>A daily math challenge inspired by wordle.</description>
+    </game>
+    <game>
+        <title>Nerdle</title>
+        <link>https://nerdlegame.com/</link>
+        <description>A daily math challenge game based on wordle.</description>
+    </game>
+    <game>
+        <title>Citydle</title>
+        <link>https://citydle.com/</link>
+        <description>A daily city guessing game.</description>
+    </game>
+    <game>
+        <title>Globle</title>
+        <link>https://globle-game.com/</link>
+        <description>A daily country guessing game.</description>
+    </game>
+    <game>
+        <title>Worldle</title>
+        <link>https://worldle.teuteuf.fr/</link>
+        <description>Guess the location based on its sillouhette in 6 tries.</description>
+    </game>
+    <game>
+        <title>Byrdle</title>
+        <link>https://www.byrdle.net/</link>
+        <description>Guess the hidden choral themed word in 6 tries.</description>
+    </game>
+    <game>
+        <title>Swiftle</title>
+        <link>https://www.techyonic.co/swiftle</link>
+        <description>A daily Taylor Swift song guessing game.</description>
+    </game>
+    <game>
+        <title>Chordle</title>
+        <link>https://chordle.synthase.cc/</link>
+        <description>Like wordle but for chords.</description>
+    </game>
+    <game>
+        <title>Taylordle</title>
+        <link>https://taylordle.org/</link>
+        <description>A Taylor Swift inspired wordle.</description>
+    </game>
+    <game>
+        <title>Heardle</title>
+        <link>https://heardlewordle.io/</link>
+        <description>Guess the song from the intro.</description>
+    </game>
+    <game>
+        <title>Absurdle</title>
+        <link>https://qntm.org/files/absurdle/absurdle.html</link>
+        <description>An adversarial version of wordle.</description>
+    </game>
+    <game>
+        <title>Reversl</title>
+        <link>https://reversle.net/</link>
+        <description>Wordle in reverse! You get given the answer and wordle pattern and need to guess the guesses.</description>
+    </game>
+    <game>
+        <title>SquareWordle</title>
+        <link>https://squareword.org/</link>
+        <description>Wordle Squared.</description>
+    </game>
+    <game>
+        <title>Crosswordle</title>
+        <link>https://crosswordle.serializer.ca/</link>
+        <description>The goal is to guess two crossing words in as few guesses as possible.</description>
+    </game>
+    <game>
+        <title>Septl</title>
+        <link>https://septle.com/</link>
+        <description>A daily 7 letter wordle.</description>
+    </game>
+    <game>
+        <title>Semantle</title>
+        <link>https://semantle.com/</link>
+        <description>You are told how semantically similar your word is to the answer.</description>
+    </game>
+    <game>
+        <title>Moistle</title>
+        <link>https://samperisi.com/moistle/?ref=wordleverse.net</link>
+        <description>Wordle with naughty words.</description>
+    </game>
+    <game>
+        <title>Turdle</title>
+        <link>https://turdle.xyz/</link>
+        <description>A turtle based wordle game.</description>
+    </game>
+    <game>
+        <title>Revertle</title>
+        <link>https://www.puppetsquid.com/revertle/</link>
+        <description>Complete a wordle against a hidden secret word.</description>
+    </game>
+    <game>
+        <title>Woodle</title>
+        <link>https://play.woodle.today/</link>
+        <description>Mastermind and wordle crossover.</description>
+    </game>
+    <game>
+        <title>WordleWordle</title>
+        <link>https://wordly.org/10-letter-words-wordle</link>
+        <description>A daily 10 letter wordle game.</description>
+    </game>
+    <game>
+        <title>Sweardle</title>
+        <link>https://sweardle.com/</link>
+        <description>A wordle that includes swear words.</description>
+    </game>
+    <game>
+        <title>Waffle</title>
+        <link>https://wafflegame.net/daily</link>
+        <description>Complete wordle in a waffle shaped grid.</description>
+    </game>
+    <game>
+        <title>Sedectordle</title>
+        <link>https://www.sedecordle.com/?mode=daily</link>
+        <description>Complete 16 wordles in parallel.</description>
+    </game>
+    <game>
+        <title>Octordle</title>
+        <link>https://www.britannica.com/games/octordle/daily</link>
+        <description>Complete 8 wordles in parallel.</description>
+    </game>
+    <game>
+        <title>Quordle</title>
+        <link>https://www.merriam-webster.com/games/quordle/#/</link>
+        <description>Complete 4 wordles in parallel.</description>
+    </game>
+    <game>
+        <title>Dordle</title>
+        <link>https://zaratustra.itch.io/dordle</link>
+        <description>Complete 2 wordles in parallel.</description>
     </game>
 </games> 

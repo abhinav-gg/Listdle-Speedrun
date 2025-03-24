@@ -28,12 +28,6 @@ body {
     padding: 2rem;
 }
 
-/* Header Styles */
-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
 .title {
     font-size: 4rem;
     color: var(--primary-color);
@@ -46,6 +40,7 @@ header {
     font-size: 1.2rem;
     color: var(--text-color);
     opacity: 0.8;
+    margin-bottom: 1.5rem;
 }
 
 /* Button Styles */
@@ -292,7 +287,7 @@ header {
 }
 
 /* Button Styles */
-#apply-seed, #generate-games {
+#apply-seed, #generate-games, #surprise-me {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     color: white;
@@ -303,19 +298,18 @@ header {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#apply-seed:hover, #generate-games:hover {
+#apply-seed:hover, #generate-games:hover, #surprise-me {
     background-color: var(--hover-color);
     transform: translateY(-2px);
 }
 
-#apply-seed:active, #generate-games:active {
+#apply-seed:active, #generate-games:active, #surprise-me {
     transform: translateY(0);
 }
 
 /* Centering the header and output area */
 header {
     text-align: center;
-    margin-bottom: 4rem;
 }
 
 #generate-games {
@@ -421,6 +415,7 @@ header {
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -497,4 +492,9 @@ header {
 
 .home-button:hover {
     color: var(--accent-color); /* Change color on hover */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto; /* This ensures the footer stays at the bottom */
 } 
