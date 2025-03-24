@@ -81,11 +81,6 @@
         <description>Guess the prime number in 6 tries.</description>
     </game>
     <game>
-        <title>Game Name</title>
-        <link>https://game-url.com</link>
-        <description>Brief description of the game.</description>
-    </game>
-    <game>
         <title>Mathler</title>
         <link>https://www.mathler.com/</link>
         <description>A daily math wordle game.</description>
