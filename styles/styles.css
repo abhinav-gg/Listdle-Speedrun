@@ -1,0 +1,500 @@
+/* Global Styles */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --hover-color: #2980b9;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.button-description {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.games-button {
+    border-left: 6px solid var(--accent-color);
+}
+
+.generator-button {
+    border-left: 6px solid #e74c3c;
+}
+
+/* Games List Styles */
+.games-grid {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.game-item {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.game-content {
+    flex: 1;
+}
+
+.game-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.game-title a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.game-title a:hover {
+    color: var(--accent-color);
+}
+
+.game-description {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 0.95rem;
+}
+
+/* Star Checkbox Styles */
+.star-checkbox {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.star {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    transition: all 0.2s ease;
+}
+
+.star:before, .star:after {
+    content: '★';
+    position: absolute;
+    font-size: 40px;
+    line-height: 40px;
+    transition: all 0.2s ease;
+}
+
+.star:before {
+    color: #ddd;
+}
+
+.star:after {
+    color: #ffd700;
+    opacity: 0;
+}
+
+.star-checkbox input:checked ~ .star:after {
+    opacity: 1;
+}
+
+.star-checkbox:hover .star:before {
+    color: #ccc;
+}
+
+.error-text {
+    color: #e74c3c;
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Generator Form Styles */
+.generator-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Back Link Styles */
+.back-link {
+    display: inline-block;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .title {
+        font-size: 3rem;
+    }
+    
+    .button-container {
+        padding: 0 1rem;
+    }
+    
+    .games-grid {
+        padding: 1rem;
+    }
+    
+    .game-container {
+        gap: 1rem;
+    }
+    
+    .star-checkbox {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .star:before, .star:after {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+/* Seed Input Styles */
+#seed-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    width: 200px; /* Adjust width as needed */
+    margin-right: 1rem; /* Space between input and button */
+    transition: border-color 0.3s ease;
+}
+
+#seed-input:focus {
+    outline: none;
+    border-color: var(--hover-color);
+}
+
+/* Button Styles */
+#apply-seed, #generate-games {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#apply-seed:hover, #generate-games:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+#apply-seed:active, #generate-games:active {
+    transform: translateY(0);
+}
+
+/* Centering the header and output area */
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#generate-games {
+    margin-top: 1rem;
+}
+
+/* Output Area Styles */
+#output-area {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.seed-output {
+    font-size: 1.2rem;
+    white-space: pre-wrap; /* Preserve formatting for JSON */
+    margin: 1rem 0;
+}
+
+.copy-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.copy-button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+.copy-button:active {
+    transform: translateY(0);
+}
+
+/* Generator Page Specific Styles */
+.games-grid-5x5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item.filled {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+#output-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seed-output {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 2rem 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+}
+
+/* Responsive grid */
+@media (max-width: 768px) {
+    .games-grid-5x5 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .games-grid-5x5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Horizontal button container */
+.button-container.horizontal {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .button-container.horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Grid item links */
+.game-link {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.game-link:hover {
+    transform: scale(1.05);
+}
+
+/* Seed input styling */
+.seed-input-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#seed-input {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    width: 200px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+#seed-input:focus {
+    outline: none;
+    border-color: var(--hover-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+@media (max-width: 600px) {
+    .seed-input-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #seed-input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.home-button {
+    font-size: 1.5rem; /* Adjust size as needed */
+    position: fixed; /* Keep it fixed in the viewport */
+    top: 1rem; /* Distance from the top */
+    left: 1rem; /* Distance from the left */
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: transparent; /* Optional: make background transparent */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s ease; /* Add transition for hover effect */
+}
+
+.home-button:hover {
+    color: var(--accent-color); /* Change color on hover */
+} 

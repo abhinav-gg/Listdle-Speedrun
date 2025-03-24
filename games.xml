@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games>
+    <game>
+        <title>Wordle</title>
+        <link>https://www.nytimes.com/games/wordle</link>
+        <description>Guess the five-letter word in six tries with color-coded hints.</description>
+    </game>
+    <game>
+        <title>Nerdle</title>
+        <link>https://nerdlegame.com/</link>
+        <description>Like Wordle, but with math equations instead of words.</description>
+    </game>
+    <game>
+        <title>Globle</title>
+        <link>https://globle-game.com/</link>
+        <description>Guess the country with proximity-based hints.</description>
+    </game>
+    <game>
+        <title>Game Name</title>
+        <link>https://game-url.com</link>
+        <description>Brief description of the game.</description>
+    </game>
+</games> 
